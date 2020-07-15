@@ -114,7 +114,7 @@ const Person = ({ person, onBtn }) => (
 )
 
 const PersonList = ({ persons, filter, onBtn }) => (
-  persons.filter(p => p.name.includes(filter)).map(p => <Person key={p.name} person={p} onBtn={onBtn}/>)
+  persons.filter(p => p.name.toLowerCase().includes(filter.toLowerCase())).map(p => <Person key={p.name} person={p} onBtn={onBtn}/>)
 )
 
 const Notification = ({ message }) => {
