@@ -1,0 +1,14 @@
+.error {
+  background-color: firebrick;
+  padding: 10px;
+}
+
+.success {
+  background-color: forestgreen;
+  padding: 10px;
+}
+
+.info {
+  background-color: gray;
+  padding: 10px;
+}
